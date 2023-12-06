@@ -8,3 +8,4 @@ requirements.txt и pyproject.toml
 filename = 'operations.json'
 operations_data = read_operations(filename)
 display_last_operations(operations_data)
+Используется фреймворк pytest для тестирования кода
