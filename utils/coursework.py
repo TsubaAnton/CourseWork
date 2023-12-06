@@ -39,4 +39,4 @@ def display_last_operations(operations_data):
 """Получаем библиотеку json"""
 filename = '../operations.json'
 operations_data = read_operations(filename)
-display_last_operations(operations_data)
+print(display_last_operations(operations_data))
