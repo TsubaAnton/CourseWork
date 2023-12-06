@@ -35,8 +35,12 @@ def display_last_operations(operations_data):
         reverse=True
     )[:5]
 
+    for operation in executed_operations:
+        formatted_result = format_operation(operation)
+        print(formatted_result)
+
 
 """Получаем библиотеку json"""
 filename = '../operations.json'
 operations_data = read_operations(filename)
-print(display_last_operations(operations_data))
+display_last_operations(operations_data)
